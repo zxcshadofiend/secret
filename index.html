@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для моей принцессы ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="welcome">
+
+    <div class="crown">♛</div>
+
+    <h1>Для моей принцессы</h1>
+
+    <p class="subtitle">
+        Этот маленький мир создан специально для тебя.
+    </p>
+
+    <button id="openButton" type="button">
+        Открыть моё сердце ❤️
+    </button>
+
+    <p id="message" class="hidden">
+        Привет, котик!
+        <br><br>
+        Я создал это место специально для тебя.
+        Здесь собраны мои мысли, чувства и маленькие сюрпризы.
+        <br><br>
+        Надеюсь, тебе понравится ❤️
+    </p>
+
+    <!-- Письма -->
+    <section class="letters">
+        <h2>Маленькие письма для тебя</h2>
+        <p class="letters-intro">
+            Открывай любое письмо
+        </p>
+
+        <div class="letter-grid">
+            <button class="letter" type="button" data-letter="miss">
+                💌 <span>Когда скучаешь</span>
+            </button>
+            <button class="letter" type="button" data-letter="smile">
+                💌 <span>Когда грустно</span>
+            </button>
+            <button class="letter" type="button" data-letter="love">
+                💌 <span>Когда нужны тёплые слова</span>
+            </button>
+            <button class="letter" type="button" data-letter="dream">
+                💌 <span>О наших мечтах</span>
+            </button>
+        </div>
+
+        <div id="letterContent" class="letter-content hidden" aria-live="polite">
+            <h3 id="letterTitle"></h3>
+            <p id="letterText"></p>
+            <button id="closeLetter" type="button">Закрыть письмо</button>
+        </div>
+    </section>
+
+    <!-- Роза -->
+    <section class="rose-section">
+        <h2>Роза для моей принцессы</h2>
+        <p class="rose-subtitle">Я приготовил для тебя кое-что особенное ❤️</p>
+
+        <button id="roseButton" class="rose-button" type="button"
+                aria-label="Раскрыть розу" aria-expanded="false">
+            <span class="rose">
+                <span class="rose-center"></span>
+                <span class="petal petal-1"></span>
+                <span class="petal petal-2"></span>
+                <span class="petal petal-3"></span>
+                <span class="petal petal-4"></span>
+                <span class="petal petal-5"></span>
+                <span class="petal petal-6"></span>
+                <span class="petal petal-7"></span>
+                <span class="petal petal-8"></span>
+            </span>
+        </button>
+
+        <p id="roseHint" class="rose-hint">Нажми на розу, чтобы она раскрылась</p>
+
+        <div id="roseMessage" class="rose-message hidden">
+            <h3>Для тебя, моя принцесса ❤️</h3>
+            <p>
+                Если бы я мог подарить тебе целый сад роз,
+                я бы всё равно хотел, чтобы среди них
+                ты заметила именно эту.
+
+                <br><br>
+
+                Потому что она напоминает мне о тебе:
+                о самом важном человеке, которому
+                я хочу дарить свою заботу и нежность.
+
+                <br><br>
+
+                Пусть эта роза будет маленьким
+                напоминанием о том, что ты мне безумно дорога.
+            </p>
+        </div>
+    </section>
+
+    <!-- Стихотворение -->
+    <section class="poem-section" id="poem">
+        <div class="poem-decoration">✦</div>
+        <h2>Несколько строк для тебя</h2>
+        <p class="poem-subtitle">То, что я хочу сказать тебе стихами ❤️</p>
+
+        <div class="poem-paper">
+            <div class="poem-title">Для моей принцессы</div>
+
+            <div id="poemText" class="poem-text hidden">
+                <p>Дана - мой прекрасный аленький цветок</p>
+                <p>Без неё мне не хорошо</p>
+                <p>Я хочу пойти с ней под венок, </p>
+                <p>Чтоб по жизни вместе нам идти ещё </p>
+                <p>Ты для меня - как свет во тьме</p>
+                <p>Ты всех дороже во всем мире мне </p>
+                <p>Твой смех, как сладкий мед </p>
+                <p>И сердце от любви поет ❤️</p>
+            </div>
+
+            <button id="poemButton" type="button">Прочитать стихотворение ❤️</button>
+        </div>
+
+        <p class="poem-signature">Написано с любовью для моей принцессы</p>
+    </section>
+
+    <!-- Карта мира -->
+    <section class="map-section" id="map">
+        <div class="map-decoration">✈</div>
+        <h2>Карта наших городов</h2>
+        <p class="map-subtitle">
+            Даже если мы далеко — наши города соединены ❤️
+        </p>
+
+        <div class="map-wrapper">
+            <svg class="world-map" viewBox="0 0 1000 500"
+                 role="img" aria-label="Карта мира с Москвой, Римом и линией между ними">
+
+                <defs>
+                    <radialGradient id="oceanGlow" cx="50%" cy="40%" r="75%">
+                        <stop offset="0%" stop-color="#1c0d15"/>
+                        <stop offset="100%" stop-color="#0a0508"/>
+                    </radialGradient>
+
+                    <linearGradient id="landFill" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#5a2a3a"/>
+                        <stop offset="100%" stop-color="#33161f"/>
+                    </linearGradient>
+
+                    <filter id="routeGlow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur stdDeviation="3" result="blur"/>
+                        <feMerge>
+                            <feMergeNode in="blur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+
+                <rect width="1000" height="500" fill="url(#oceanGlow)"/>
+
+                <g class="grid" stroke="rgba(220,160,175,0.08)" stroke-width="0.7" fill="none">
+                    <path d="M0 100 H1000 M0 200 H1000 M0 300 H1000 M0 400 H1000"/>
+                    <path d="M200 0 V500 M400 0 V500 M600 0 V500 M800 0 V500"/>
+                </g>
+
+                <g class="continents" fill="url(#landFill)"
+                   stroke="rgba(232,185,156,0.55)" stroke-width="1.2"
+                   stroke-linejoin="round">
+
+                    <path d="M155 70 L215 58 L260 70 L295 60 L320 80
+                             L300 105 L275 115 L265 140 L245 150
+                             L235 175 L215 185 L205 210 L190 235
+                             L175 225 L165 200 L150 190 L130 165
+                             L115 140 L120 110 L140 90 Z"/>
+
+                    <path d="M330 45 L385 40 L405 60 L395 90 L365 100
+                             L340 85 Z"/>
+
+                    <path d="M230 250 L270 245 L300 265 L315 300
+                             L305 340 L285 385 L260 425 L245 440
+                             L230 415 L220 380 L210 340 L205 300
+                             L215 270 Z"/>
+
+                    <path d="M455 100 L490 88 L525 92 L555 105 L565 125
+                             L550 145 L530 160 L505 165 L485 158
+                             L470 145 L455 130 Z"/>
+
+                    <path d="M470 175 L520 168 L560 180 L580 205 L585 240
+                             L570 285 L545 330 L520 365 L495 375
+                             L475 350 L465 315 L458 275 L455 230 Z"/>
+
+                    <path d="M565 100 L620 88 L680 78 L740 82 L800 95
+                             L850 115 L880 140 L870 170 L840 190
+                             L800 200 L770 215 L740 215 L710 200
+                             L680 205 L650 195 L620 190 L595 175
+                             L575 150 L565 125 Z"/>
+
+                    <path d="M660 195 L700 190 L720 215 L705 250 L680 265
+                             L665 245 L655 220 Z"/>
+
+                    <path d="M760 210 L810 205 L840 225 L835 250 L805 255
+                             L780 240 L765 230 Z"/>
+
+                    <path d="M880 150 L895 145 L905 165 L900 185 L885 180
+                             L878 165 Z"/>
+
+                    <path d="M790 330 L840 320 L880 330 L895 355 L885 385
+                             L850 400 L810 395 L780 375 L775 350 Z"/>
+
+                    <path d="M50 470 L950 470 L950 495 L50 495 Z" opacity="0.35"/>
+                </g>
+
+                <line id="routeLine" class="route-line"
+                      x1="0" y1="0" x2="0" y2="0"
+                      filter="url(#routeGlow)"/>
+
+                <g id="cityA" class="city" data-city="a" tabindex="0" role="button" aria-label="Мой город">
+                    <circle class="city-pulse" r="14"/>
+                    <circle class="city-dot" r="6"/>
+                    <text class="city-label" x="0" y="-18">Москва</text>
+                </g>
+
+                <g id="cityB" class="city" data-city="b" tabindex="0" role="button" aria-label="Твой город">
+                    <circle class="city-pulse" r="14"/>
+                    <circle class="city-dot" r="6"/>
+                    <text class="city-label" x="0" y="-18">Рим</text>
+                </g>
+            </svg>
+
+            <p id="mapHint" class="map-hint">
+                Нажми на город, чтобы увидеть послание ❤️
+            </p>
+
+            <div id="mapMessage" class="map-message hidden" aria-live="polite">
+                <h3 id="mapMessageTitle"></h3>
+                <p id="mapMessageText"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секретная страница: 5 вопросов -->
+    <section class="secret-section" id="secret">
+        <div class="secret-decoration">🔐</div>
+        <h2>Секретное послание</h2>
+        <p class="secret-subtitle">
+            Пять вопросов о нас. Ответь правильно на все — и увидишь то,
+            что я приготовил только для тебя ❤️
+        </p>
+
+        <div class="secret-card">
+
+            <div class="secret-progress">
+                <span id="secretProgressText">Вопрос 1 из 5</span>
+                <div class="secret-progress-bar">
+                    <div id="secretProgressFill" class="secret-progress-fill"></div>
+                </div>
+            </div>
+
+            <p class="secret-question" id="secretQuestion">Загрузка вопроса...</p>
+
+            <label class="secret-label" for="secretAnswer">Твой ответ:</label>
+            <input id="secretAnswer" class="secret-input" type="text"
+                   autocomplete="off" placeholder="Напиши ответ...">
+
+            <button id="secretButton" type="button">Проверить ❤️</button>
+
+            <p id="secretFeedback" class="secret-feedback" aria-live="polite"></p>
+        </div>
+
+        <div id="secretMessage" class="secret-message hidden" aria-live="polite">
+            <h3>Только для тебя ❤️</h3>
+            <p id="secretMessageText"></p>
+        </div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
